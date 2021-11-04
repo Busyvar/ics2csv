@@ -1,1 +1,1 @@
-pyinstaller --onefile ics2csv.py
+pyinstaller --onefile --icon=logo.ico ics2csv.py 
