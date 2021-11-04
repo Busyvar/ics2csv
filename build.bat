@@ -1,0 +1,1 @@
+pyinstaller --onefile ics2csv.py
