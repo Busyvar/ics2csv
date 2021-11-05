@@ -1,11 +1,14 @@
 #ics2csv
 #brief : convertit des événements de calendrier en champs de fichier csv
+#author: pelett "paulemmanuel.lett@posteo.net"
 
-#from ics import Calendar
 from icalendar import Calendar
 import sys
 import argparse
 
+
+def get_safe_csv_field(data: str) -> str:
+	return data.replace('\n','').replace('\r','').replace('"','').replace(';','')
 #arg parsing
 parser = argparse.ArgumentParser(description='Process some calendar.')
 parser.add_argument('--input', dest='input_filename', type=str, required=False,
@@ -45,17 +48,15 @@ for component in c.walk():
 		date = component.get('dtstart')
 		description = component.get('description')
 		if(summary):
-			summary.replace('\n','')
+			summary = get_safe_csv_field(summary)
 		if(description):
-			description.replace('\n','')
+			description = get_safe_csv_field(description)
 		if date:
 			date = date.dt
-		format_data = "{};{};{};\n".format(summary, date, description)
+		format_data = "{};{};\"{}\";\n".format(summary, date, description)
 		parsed_events += format_data
 
 
-
-#c = Calendar(cal.read())
 cal.close()
 
 output = open(output_filename,"w+")
