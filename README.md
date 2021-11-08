@@ -1,7 +1,12 @@
 # Ics2Csv
 A simple python script to convert specific data from icalendar to a csv file.
 ## Usage
+![demo_animation](demo.gif)
+
+### Data flow
 ![data processing workflow](ics2csv_data_processing.png)
+
+### command line options
 >usage: ics2csv.py [-h] [--input INPUT_FILENAME] [--output OUTPUT_FILENAME] [--quiet]
 >
 >Process some calendar.
@@ -21,7 +26,7 @@ ics2csv is currently only tested for windows, you can launch ics2csv application
 - https://help.zolasuite.com/portal/en/kb/articles/how-do-i-export-my-calendar-from-microsoft-outlook
 
 ## Building
-### build dependencies
+### Dependency requirements
 - Python3
 - pyinstaller
 - easygui (for graphical use)
