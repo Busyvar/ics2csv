@@ -24,8 +24,13 @@ ics2csv is currently only tested for windows, you can launch ics2csv application
 ### build dependencies
 - Python3
 - pyinstaller
-- easygui (optional in CLI : for graphical use)
+- easygui (for graphical use)
 - icalendar
+
+To install all, use:
+> pip install pyinstaller easygui icalendar
+
+nb. pyinstaller might need admin right to install.
 
 <!---
 //diagram code for nomnoml
