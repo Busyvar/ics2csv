@@ -1,10 +1,10 @@
 # Ics2Csv
 A simple python script to convert specific data from icalendar to a csv file.
 ## Usage
-![demo_animation](demo.gif)
+![demo_animation](./misc/demo.gif)
 
 ### Data flow
-![data processing workflow](ics2csv_data_processing.png)
+![data processing workflow](./misc/ics2csv_data_processing.png)
 
 ### command line options
 >usage: ics2csv.py [-h] [--input INPUT_FILENAME] [--output OUTPUT_FILENAME] [--quiet]
