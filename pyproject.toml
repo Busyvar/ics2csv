@@ -3,7 +3,6 @@ requires = [
 				"setuptools>=42",
 				"easygui",
 				"argparse",
-				"icalendar",
-				"sys"
+				"icalendar"
 ]
 build-backend = "setuptools.build_meta"

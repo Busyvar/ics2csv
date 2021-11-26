@@ -3,7 +3,6 @@
 #author: pelett "paulemmanuel.lett@posteo.net"
 
 from icalendar import Calendar
-import sys
 import argparse
 
 
