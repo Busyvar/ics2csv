@@ -61,5 +61,5 @@ nb. pyinstaller might need admin right to install.
 >build.bat
 
 ## License
-Copyleft 2021
+Creative Common CC0 2021
 Dependencies mentioned in build dependencies section are distributed with their own license.
